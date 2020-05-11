@@ -1,0 +1,64 @@
+<html>
+<head>
+<title>Rock Paper Scissors</title>
+
+<script>
+function UserChoice()
+{
+	if (document.form1.choice[0].checked)
+	{
+		return 0;  //Rock
+	}
+	if (document.form1.choice[1].checked)
+	{
+		return 1;  //Paper
+	}
+	if (document.form1.choice[2].checked)
+	{
+		return 2;  //Scissors
+	}
+}
+function Play()
+{
+	var userchoice = UserChoice();
+	var cpuchoice = Math.floor(Math.random() * 10) % 3;
+	if (userchoice == cpuchoice)
+	{
+		document.form1.results.value = "Draw! Try Again";
+	}
+	if (userchoice == 0 && cpuchoice == 1 || userchoice == 1 && cpuchoice == 2 || userchoice == 2 && cpuchoice == 0)
+	{
+		document.form1.results.value = "You Lose!";
+	}
+	if (userchoice == 0 && cpuchoice == 2 || userchoice == 1 && cpuchoice == 0 || userchoice == 2 && cpuchoice == 1)
+	{
+		document.form1.results.value = "You Win!";
+	}
+	
+}
+
+</script>
+
+</head>
+
+<body style="padding:30px;">
+<h2> Final - Part 4 </h2>
+Rock, Paper, Scissors <br>
+Tyler Bruce <p>
+
+<form name="form1" id ="form1">
+<div style="float:left; width:300px; background-color:lightgrey; padding:20px">
+<dt>Your Choice:
+<dt><input type="radio" name="choice" value="rock"> Rock
+<dt><input type="radio" name="choice" value="paper">Paper
+<dt><input type="radio" name="choice" value="scissors">Scissors
+<br>
+<p>
+<input type="button" value="Play" onclick="Play()">
+<p>
+<textarea name="results" Rows="8" Cols="20"></textarea>
+</div>
+</form>
+
+</body>
+</html>

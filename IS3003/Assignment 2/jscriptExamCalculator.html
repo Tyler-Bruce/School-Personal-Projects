@@ -1,0 +1,57 @@
+
+<script>
+function mult ()
+{
+	var number1, number2, number3, total;
+	number1 = parseFloat(document.form1.number1.value);
+	number2 = parseFloat(document.form1.number2.value);
+	number3 = parseFloat(document.form1.number3.value);
+	total = (number1 + number2 + number3) / 3;
+	total = Math.round(total * 100) / 100;
+	document.form1.total.value = total;
+	if (total < 60)
+	{
+		document.form1.stat.value = "Failing";
+		document.form1.grade.value = "F";
+	}
+	else if (total < 70)
+	{
+		document.form1.stat.value = "Passing";
+		document.form1.grade.value = "D";
+	}
+	else if (total < 80)
+	{
+		document.form1.stat.value = "Passing";
+		document.form1.grade.value = "C";
+	}
+	else if (total < 90)
+	{
+		document.form1.stat.value = "Passing";
+		document.form1.grade.value = "B";
+	}
+	else if (total < 101)
+	{
+		document.form1.stat.value = "Passing";
+		document.form1.grade.value = "A";
+	}
+	
+}
+
+</script>
+
+<h2> Javascript Exam Calculator </h2>
+James "Tyler" Bruce <p>
+
+
+<form name="form1">
+Exam 1: <input type="text" name="number1" value="100"> <p>
+Exam 2: <input type="text" name="number2" value="90"> <p>
+Exam 3: <input type="text" name="number3" value="80"> <p>
+
+<input type="button" value="Calculate Grade" onclick="mult()"> 
+<p>
+
+Average: <input type="text" name="total"> <p>
+Status: <input type="text" name="stat"> <p>
+Grade: <input type="text" name="grade"> <p>
+</form>

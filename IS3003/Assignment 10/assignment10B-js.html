@@ -1,0 +1,72 @@
+<html>
+<head>
+<title>Changing Size & Color - Javascript </title>
+
+<script>
+function changeFontSizeBig()
+{
+	document.getElementById("output").style.fontSize = 'xx-large';
+}
+
+function changeFontSizeSmall()
+{
+	document.getElementById("output").style.fontSize = 'xx-small';
+}
+function changeColorGreen()
+{
+	document.getElementById("output").style.color = 'green';
+}
+
+function changeColorBlue()
+{
+	document.getElementById("output").style.color = 'blue';
+}
+function changeBigBlue()
+{
+	document.getElementById("output").style.fontSize = 'xx-large';
+	document.getElementById("output").style.color = 'blue';
+}
+
+function changeSmallGreen()
+{
+	document.getElementById("output").style.fontSize = 'xx-small';
+	document.getElementById("output").style.color = 'green';
+}
+function changeBigGreen()
+{
+	document.getElementById("output").style.fontSize = 'xx-large';
+	document.getElementById("output").style.color = 'green';
+}
+
+function changeSmallBlue()
+{
+	document.getElementById("output").style.fontSize = 'xx-small';
+	document.getElementById("output").style.color = 'blue';
+}
+</script>
+
+</head>
+
+<body style="padding:30px;">
+
+<form name="form1">
+<input type="button" value="Big Text" onclick="changeFontSizeBig()">
+<input type="button" value="Small Text" onclick="changeFontSizeSmall()">
+<input type="button" value="Green Text" onclick="changeColorGreen()">
+<input type="button" value="Blue Text" onclick="changeColorBlue()">
+<input type="button" value="Green & Small" onclick="changeSmallGreen()">
+<input type="button" value="Blue & Big" onclick="changeBigBlue()">
+<input type="button" value="Green & Big" onclick="changeBigGreen()">
+<input type="button" value="Blue & Small" onclick="changeSmallBlue()">
+</form>
+
+<p>
+
+some text.
+
+<p id="output"><b>Northeastern State University</b></p>
+
+more text.
+
+</body>
+</html>

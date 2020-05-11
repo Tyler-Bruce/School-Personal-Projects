@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>Vowel Counter</title>
+
+<script>
+function count()
+{
+var string = document.form1.phrase.value;
+var i = string.length;
+var vowels = 0;
+while (i--)
+{
+	if (string.charAt(i) == 'a')
+	{
+		vowels++;
+	}
+	if (string.charAt(i) == 'e')
+	{
+		vowels++;
+	}
+	if (string.charAt(i) == 'i')
+	{
+		vowels++;
+	}
+	if (string.charAt(i) == 'o')
+	{
+		vowels++;
+	}
+	if (string.charAt(i) == 'u')
+	{
+		vowels++;
+	}
+	if (string.charAt(i) == 'A')
+	{
+		vowels++;
+	}
+	if (string.charAt(i) == 'E')
+	{
+		vowels++;
+	}
+	if (string.charAt(i) == 'I')
+	{
+		vowels++;
+	}
+	if (string.charAt(i) == 'O')
+	{
+		vowels++;
+	}
+	if (string.charAt(i) == 'U')
+	{
+		vowels++;
+	}
+}
+document.form1.results.value = "It contains " + vowels + " vowels.";
+}
+
+</script>
+
+</head>
+
+<body style="padding:30px;">
+<h2> Assignment 14 </h2>
+Vowel Counter: Javascript <br>
+Tyler Bruce <p>
+
+<form name="form1" id ="form1">
+Phrase: <p>
+<textarea name="phrase" Rows="8" Cols="50"></textarea>
+<p>
+<input type="button" value="Count Vowels" onclick="count()">
+<p>
+<textarea name="results" Rows="8" Cols="50"></textarea>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<html>
+<head>
+<title>Changing Colors - jQuery </title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+	$("button1").click(function(){
+		$("p").css("color", "green");
+		});
+	$("button2").click(function(){
+		$("p").css("color", "black");
+		});
+
+});
+</script>
+
+</head>
+
+<body style="padding:30px; font-size:1.5em;">
+
+<button1 style="background-color:lightgray; color:green; padding:2px; border:1px solid black">Green Text</button1>
+<button2 style="background-color:lightgray; color:black; padding:2px; border:1px solid black">Black Text</button2>
+
+<br>
+<br>
+
+some text.
+<br>
+<p><b>Northeastern State University</b></p>
+more text.
+</body>
+</html>

@@ -1,0 +1,79 @@
+<html>
+<head>
+<title> Javascript: For Loop </title>
+<script>
+function displayResults ()
+{
+	var tempStr, maxValue;
+	if (isNaN (maxValue = parseFloat(document.form1.maxValue.value)))
+	{
+		alert ("Please enter a maximum value.");
+	}
+	else 
+	{
+		tempStr = "";
+		tempStr = tempStr + "Increasing order: \n";
+		for (var index = 1; index <= maxValue; index++)
+		{
+			tempStr = tempStr + index + " ";
+		}
+		tempStr = tempStr + "\n\n";
+		tempStr = tempStr + "Decreasing order: \n";
+		for (var index = maxValue; index >= 1; index--)
+		{
+			tempStr = tempStr + index + " ";
+		}
+		tempStr = tempStr + "\n\n";
+		tempStr = tempStr + "Even numbers: \n";
+		for (var index = 1; index <= maxValue; index++)
+		{
+			if (index % 2 == 0)
+			{
+			tempStr = tempStr + index + " ";
+			}
+			else 
+			{
+			continue;
+			}
+		}
+		tempStr = tempStr + "\n\n";
+		tempStr = tempStr + "Sqauare: \n";
+		for (var index1 = 1; index1 <= maxValue; index1++)
+		{
+			for (var index2 = 1; index2 <= maxValue; index2++)
+			{
+				tempStr = tempStr + "*";
+			}
+			tempStr = tempStr + "\n";
+		}
+		tempStr = tempStr + "\n\n";
+		tempStr = tempStr + "Multiplication Table: \n";
+		for (var index = 1; index <= maxValue; index++)
+			{
+				tempStr = tempStr + index + " * " + index + " = " + index*index + "\n";
+			}
+		document.form1.results.value = tempStr;
+		
+	}
+
+
+}
+</script>
+
+</head>
+
+<body style="padding:30px;">
+
+<h2> Javascript: For Loop </h2>
+Tyler Bruce <p>
+
+<form name="form1">
+
+<input type="text" name="maxValue" />
+<input type="button" onclick="displayResults()" value="Display Results" /> <br />
+<br />
+<textarea name="results" rows="25" cols="50"></textarea>
+</form>
+</body>
+
+</html>

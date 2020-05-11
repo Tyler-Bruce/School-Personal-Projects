@@ -1,0 +1,62 @@
+<html>
+<head>
+<title>Changing Colors - jQuery </title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+	$("button1").click(function(){
+		$("p").css("color", "green");
+		});
+	$("button2").click(function(){
+		$("p").css("color", "blue");
+		});
+	$("button3").click(function(){
+		$("p").css("font-size", "50%");
+		});
+	$("button4").click(function(){
+		$("p").css("font-size", "150%");
+		});
+	$("button5").click(function(){
+		$("p").css("font-size", "50%");
+		$("p").css("color", "green");
+		});
+	$("button6").click(function(){
+		$("p").css("font-size", "150%");
+		$("p").css("color", "blue");
+		});
+	$("button7").click(function(){
+		$("p").css("font-size", "150%");
+		$("p").css("color", "green");
+		});
+	$("button8").click(function(){
+		$("p").css("font-size", "50%");
+		$("p").css("color", "blue");
+		});
+
+});
+</script>
+
+</head>
+
+<body style="padding:30px; font-size:1.5em;">
+
+<button1 style="background-color:lightgray; color:green; padding:2px; border:1px solid black">Green Text</button1>
+<button2 style="background-color:lightgray; color:blue; padding:2px; border:1px solid black">Blue Text</button2>
+<button3 style="background-color:lightgray; color:black; font-size:50%; padding:2px; border:1px solid black">Small Text</button3>
+<button4 style="background-color:lightgray; color:black; font-size:150%; padding:2px; border:1px solid black">Big Text</button4>
+<button5 style="background-color:lightgray; color:green; font-size:50%; padding:2px; border:1px solid black">Green Small Text</button5>
+<button6 style="background-color:lightgray; color:blue; font-size:150%; padding:2px; border:1px solid black">Blue Big Text</button6>
+<button7 style="background-color:lightgray; color:green; font-size:150%; padding:2px; border:1px solid black">Green Big Text</button7>
+<button8 style="background-color:lightgray; color:blue; font-size:50%; padding:2px; border:1px solid black">Blue Small Text</button8>
+
+<br>
+<br>
+
+some text.
+<br>
+<p><b>Northeastern State University</b></p>
+more text.
+</body>
+</html>

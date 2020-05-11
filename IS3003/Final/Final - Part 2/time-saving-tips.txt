@@ -1,0 +1,12 @@
+ctrl + shift + esc brings up task manager(Very Useful!)
+Ctrl + alt + del brings up the lock screen so you can log out, change password or bring up the task manager
+To snap your windows, you can press the windows key + left, right, up, or down arrow keys.
+Ctrl c + ctrl v for copy/paste 
+ctrl + f to bring up the find keyword menu
+alt + tab to switch between windows
+alt + f4(function key 4, NOT the letter key f + the number key 4) to close a window
+ctrl + z to undo
+Visual Studio shortcuts:
+F9 to set breakpoints
+F5 will run your code
+When using breakpoints, F10 and F11 will let you step through code either line by line or function by function.

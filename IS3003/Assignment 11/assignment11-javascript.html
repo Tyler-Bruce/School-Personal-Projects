@@ -1,0 +1,53 @@
+<html>
+<head>
+<title>String Manipulation: Javascript</title>
+
+<script>
+function extractName()
+{
+	var completeName;
+	var firstName;
+	var middleName;
+	var lastName;
+	var spacePos;
+	var spacePos2;
+	var tempStr;
+	var remaining;
+	completeName = document.form1.completeName.value;
+	spacePos = completeName.indexOf(" ");
+	
+	firstName = completeName.substring(0, spacePos);
+	remaining = completeName.substring(spacePos + 1);
+	tempStr = "First name: " + firstName + "\n";
+	tempStr = tempStr + "It contains " + firstName.length + " characters.\n\n";
+	spacePos2 = remaining.indexOf(" ");
+	
+	middleName = remaining.substring(0,spacePos2);
+	tempStr = tempStr + "Middle name: " + middleName + "\n";
+	tempStr = tempStr + "It contains " + middleName.length + " characters.\n\n";
+	
+	lastName = remaining.substring(spacePos2 + 1);
+	tempStr = tempStr + "Last name: " + lastName + "\n";
+	tempStr = tempStr + "It contains " + lastName.length + " characters.\n\n";
+	
+	document.form1.results.value = tempStr;
+
+}
+</script>
+
+</head>
+
+<body style="padding:30px;">
+<h2> String Manipulation: Javascript </h2>
+Tyler Bruce <p>
+
+<form name="form1">
+Name: <input type="text" name="completeName" size="30" value="Tyler Bruce">
+<p>
+<input type="button" value="Extract Name" onclick="extractName()">
+<p>
+<textarea name="results" Rows="8" Cols="50"></textarea>
+</form>
+
+</body>
+</html>

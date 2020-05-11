@@ -1,0 +1,11 @@
+$search = 'Dr.'
+$replace_with = 'Bill'
+$base_dir = 'C:\Users\Tyler\Desktop\IS3003\Assignment 8'
+$text_file_ext = '.html'
+
+Get-ChildItem $base_dir -Recurse -Include "*.$text_file_ext" |
+	ForEach-Object { (Get-Content $_.FullName) |
+	ForEach-Object {$_ -replace $search, $replace_with} |
+	Set-Content $_.FullName }
+
+

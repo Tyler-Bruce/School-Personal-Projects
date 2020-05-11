@@ -1,0 +1,114 @@
+<html>
+<head> 
+<title>Health Club Calculator (Javascript)</title>
+<h2>Health Club</h2>
+James "Tyler" Bruce <p>
+<script>
+function calculate(i)
+{
+	if (i == 1)
+	{
+	var total = 0;
+	if (form1.basic[0].checked)
+		total = 80;
+	if (form1.basic[1].checked)
+		total = 100;
+	if (form1.basic[2].checked)
+		total = 120;
+	if (document.form1.tennis.checked == true)
+	{
+		total = total + 15;
+	}
+	if (document.form1.racquetball.checked == true)
+	{
+		total = total + 20;
+	}
+	if (document.form1.golf.checked == true)
+	{
+		total = total + 25;
+	}
+	var additional = document.forms["form1"].additional;
+	var j;
+	var newCharges = 0;
+	for (j = 0; j < additional.length; j++)
+	{
+		if (additional[j].checked) 
+		{
+			newCharges = newCharges + parseFloat(additional[j].value);
+		}
+	}
+	total = total + newCharges
+	var tax;
+	tax = parseFloat (document.form1.tax.value);
+	total = total + (total*tax);
+	total = Math.round(total*100)/100;
+	total = "$" + total;
+	document.form1.total.value = total;
+	}
+	if (i == 2)
+	{
+		var k;
+		var additional = document.forms["form1"].additional
+		document.form1.tax.value = "";
+		document.form1.total.value = "";
+		document.form1.tennis.checked = false;
+		document.form1.racquetball.checked = false;
+		document.form1.golf.checked = false;
+		for (k = 0; k < additional.length; k++)
+		{
+		form1.basic[k].checked = false;
+		form1.additional[k].checked = false;
+		}
+	}
+}
+
+
+function clear()							//<------- Couldnt get this to work with my clear button and I am unsure why. 
+{											//		   Passing an argument through the calculate() function works though. -Tyler
+	document.form1.tax.value = "";			
+	document.form1.total.value = "";	    
+}
+</script>
+</head>
+<body>
+<form name="form1" id="form1">
+<div style="float:left; width:130px;background-color:tomato;">
+<dl>
+<dt> Membership
+<dt><input type="radio" onchange="calculate(1)" name="basic" value="basic"> Basic 
+<dt><input type="radio" onchange="calculate(1)" name="basic" value="gold"> Gold 
+<dt><input type="radio" onchange="calculate(1)" name="basic" value="goldp"> Gold Plus
+</dl>
+</div>
+<div style="float:left; width:160px;background-color:lightgreen;">
+<dl>
+<dt> Additional Charges(1)
+<dt><input type="checkbox" onchange="calculate(1)" name="tennis" value="tennis"> Tennis 
+<dt><input type="checkbox" onchange="calculate(1)" name="racquetball" value="racquetball"> Racquetball 
+<dt><input type="checkbox" onchange="calculate(1)" name="golf" value="golf"> Golf
+</dl>
+</div>
+<div style="float:left; width:160px;background-color:lightblue;">
+<dl>
+<dt> Additional Charges(2)
+<dt><input type="checkbox" onchange="calculate(1)" name="additional" value="100"> Child Care
+<dt><input type="checkbox" onchange="calculate(1)" name="additional" value="120"> Personal Trainer 
+<dt><input type="checkbox" onchange="calculate(1)" name="additional" value="20"> Swimming Pool
+</dl>
+</div>
+<div style="clear:both">&nbsp;</div>
+<div style="float:left; width:150px;background-color:yellow;">
+<dl> 
+<dt><button type="button" onclick="calculate(1)" value="Calculate Total"> Calculate Total 
+<dt><button type="button" onclick="calculate(2)" value="Clear"> Clear
+</dl>
+</div>
+<div style="float:left; width:210px;background-color:DodgerBlue;">
+<dl>
+<dt>Tax: <input type="text" onchange="calculate(1)" name="tax" value="0">
+<dt>Total: <input type="text" name="total">
+</dl>
+</div>
+</form>
+</body>
+</html>
