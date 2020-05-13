@@ -1,0 +1,3 @@
+﻿  Source.cpp
+C:\Users\Tyler\source\repos\Assignment 7\manager.h(117): warning C4715: 'Manager::create': not all control paths return a value
+  Assignment 7.vcxproj -> C:\Users\Tyler\source\repos\Assignment 7\Debug\Assignment 7.exe

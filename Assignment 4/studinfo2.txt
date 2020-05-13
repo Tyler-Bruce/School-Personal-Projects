@@ -1,0 +1,11 @@
+6548 Alex      3.25 Art
+658  Cody      2.95 Physics
+135  Martin    2.4  Geography
+222  Alisha    3.4  Photography
+333  Sarah     1.8  Child Education
+444  Trevor    2.0  Electrical Engineering
+555  John      3.23 Mathematics
+666  Kevin     3.88 Biology
+777  Keith     2.95 Computer Science
+888  Grace     3.12 Art
+999  Kayla     3.54 Education

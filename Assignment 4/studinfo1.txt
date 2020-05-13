@@ -1,0 +1,15 @@
+123  James     4.0  Computer Science
+354  Tyler     3.0  Finance
+688  Bruce     2.0  Mathematics
+443  Linsdsey  3.4  English
+331  Michelle  3.5  Biology
+12   Chelsea   1.7  Pre-Med
+895  Taylor    3.0  Sociology
+588  Joe       2.9  Psychology
+648  Greg      3.1  Information Systems
+559  Travis    2.5  Sports Medicine
+328  Lewis     2.8  Computer Science
+789  Susan     3.12 Supply Chain Management
+456  Terry     3.22 Mechanical Engineering
+324  Jerry     4.1  Chemical Engineering
+654  Larry     3.75 Petroleum Engineering

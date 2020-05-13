@@ -1,0 +1,4 @@
+﻿  QueueSimulation.cpp
+C:\Users\Tyler\source\repos\QueueSimulation\QueueSimulation.cpp(13,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\Tyler\source\repos\QueueSimulation\cpu.h(109): warning C4715: 'NextCPU': not all control paths return a value
+  QueueSimulation.vcxproj -> C:\Users\Tyler\source\repos\QueueSimulation\Debug\QueueSimulation.exe
